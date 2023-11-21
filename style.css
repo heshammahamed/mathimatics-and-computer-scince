@@ -184,11 +184,15 @@ a:hover {
 }
 
 footer {
+    font-size: 1.2rem;
     display: flex;
     justify-content: space-between;
     padding: 2rem;
 }
 
+span {
+    color: rgba(147, 185, 97, 0.584)
+}
 @media (max-width: 1024px) {
 
     header{
