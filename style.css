@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    box-sizing : border-box;
+    margin: 0px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 5%;
+    margin: auto;
+    font-family: 'Roboto Mono', monospace;
+    box-shadow: black 0px 0px 7px;
+}
+
+body {
+    background-color : #33332D;
+    color :  #f8f9fa;
+}
+
+header .logo{
+    width : 5%;
+}
+
+header .logo img{
+    width : 100%;
+}
+
+header nav{
+    width: 50%;
+}
+
+header nav ul{
+    display : flex;
+    flex-wrap : nowrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header nav ul li{
+    list-style : none;
+    width: calc(100% / 4);
+
+    text-align: center;
+}
+
+header nav ul li:hover{
+    background-color : white;
+    cursor: pointer;
+}
+
+
+
+header nav ul li a{
+    text-decoration : none;
+    font-size : 25px;
+    letter-spacing: 2.5px;
+    color :  #f8f9fa;
+    display : block;
+    width: 100%;
+}
+
+header nav ul li a:hover{
+    color :  black;
+}
+
+
+
+
+#home {
+    font-family: 'Roboto Mono', monospace;
+    width : 90% ;
+    margin: auto;
+    padding: 50px  0px;
+    display : flex;
+    justify-content: space-between;
+}
+
+#home div {
+    width : 60% ;
+    padding-top: 100px;
+}
+
+#home div h1 {
+    font-size : 55px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#home div p{
+    font-weight: 400;
+    font-size: 22px;
+    padding-top: 50px;
+}
+
+#home div button {
+    background-color: inherit;
+    color: white;
+    border: solid white 2.5px;
+    outline: none;
+    font-size: 25px;
+    margin: 50px 0px;
+    box-shadow: -3px 6px white;
+}
+
+#home div button:hover {
+    background-color: white;
+    color: black;
+    border: solid black 2.5px;
+    box-shadow: -3px 6px black;
+    cursor: pointer;
+}
+
+a {
+    display: block;
+    width : 100%;
+    color: white;
+    padding: .3em 1em;
+    text-decoration: none;
+}
+
+a:hover {
+    color : black;
+}
+
+#year {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+}
+
+.container {
+    background-color: #212121;
+    padding : 100px 0px;
+}
+#year div{
+    width: calc(100% / 3.5);
+}
+
+#year img{
+    width: 100%;
+    background-color: white;
+    border: solid 5px black ;
+    border-radius: 2px;
+    border-radius: 40px;
+}
+
+#year div:nth-child(4) {
+    padding-top: 100px;
+}
+
+#year div:nth-child(1) img:hover{
+    background-color: #a1e9ed;
+    cursor: pointer;
+}
+
+#year div:nth-child(2) img:hover{
+    background-color: rgb(163, 232, 148);
+    cursor: pointer;
+}
+
+#year div:nth-child(3) img:hover{
+    background-color: rgb(187, 148, 232);
+    cursor: pointer;
+}
+
+#year div:nth-child(4) img:hover{
+    background-color: rgb(232, 208, 148);
+    cursor: pointer;
+}
+
+#year div p{
+    font-size: 2rem;
+    padding: 0em 0px 0px 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+@media (max-width: 1024px) {
+
+    header{
+        justify-content: space-between;
+    }
+
+    header .logo{
+        width : 10%;
+    }
+    header nav{
+        width : 70%;
+    }
+
+
+    #home div {
+        padding-top : 0px;
+        width: 100%;
+    }
+
+    #home div h1 {
+        font-size: 50px;
+    }
+
+    #home div p {
+        font-size: 1.5rem;
+    }
+
+
+    #year div{
+        width : calc(100% / 2.3);
+    }
+
+    #year {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #year img{
+        width: 100%;
+        background-color: white;
+        border: solid 5px black ;
+        border-radius: 2px;
+        border-radius: 0px;
+    }
+
+    #year div {
+        margin-bottom : 50px;
+    }
+    #year div p {
+        font-size: 1.6rem;
+        padding-top: 0em;
+    }
+
+    #year div:nth-child(4) {
+        padding-top: 0px;
+    }
+    .container {
+        padding-top : 100px;
+        padding-bottom : 50px;
+    }
+
+
+    footer {
+        display: block;
+        padding: .5rem;
+        font-size : 17px;
+    }
+
+    .first {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    header{
+        justify-content: center;
+    }
+
+    header .logo{
+        width : 32%;
+    }
+
+    #home img {
+        display : none;
+    }
+
+    #home {
+        display : block;
+    }
+
+    #home div {
+        padding-top : 0px;
+        width: 100%;
+    }
+
+    #home div h1 {
+        font-size: 61px;
+    }
+
+    #home div p {
+        font-size: 1.5rem;
+    }
+
+
+    #year div{
+        width : calc(100% / 2.3);
+    }
+
+    #year {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #year img{
+        width: 100%;
+        background-color: white;
+        border: solid 5px black ;
+        border-radius: 2px;
+        border-radius: 0px;
+    }
+
+    #year div {
+        margin-bottom : 50px;
+    }
+    #year div p {
+        font-size: 1.6rem;
+        padding-top: 0em;
+    }
+
+    #year div:nth-child(4) {
+        padding-top: 0px;
+    }
+    .container {
+        padding-top : 100px;
+        padding-bottom : 50px;
+    }
+
+
+    footer {
+        display: block;
+        padding: .5rem;
+        font-size : 17px;
+    }
+
+    .first {
+        margin-bottom: 10px;
+    }
+    
+}
+
+
+@media (max-width: 450px) {
+    nav {
+        display: none;
+    }
+
+    header{
+        justify-content: center;
+    }
+
+    header .logo{
+        width : 30%;
+    }
+
+    #home img {
+        display : none;
+    }
+
+    #home {
+        display : block;
+    }
+
+    #home div {
+        padding-top : 0px;
+        width: 100%;
+    }
+
+    #home div h1 {
+        font-size: 39px;
+    }
+
+    #home div p {
+        font-size: 1.5rem;
+    }
+
+    #year div{
+        width : 100%;
+    }
+    
+    #year {
+        display: block;
+    }
+
+    #year img{
+        width: 100%;
+        background-color: white;
+        border: solid 5px black ;
+        border-radius: 2px;
+        border-radius: 0px;
+    }
+
+    #year div {
+        margin-bottom : 50px;
+    }
+    #year div p {
+        font-size: 1.6rem;
+        padding-top: 0em;
+    }
+
+    #year div:nth-child(4) {
+        padding-top: 0px;
+    }
+    .container {
+        padding-top : 100px;
+        padding-bottom : 50px;
+    }
+
+
+    footer {
+        display: block;
+        padding: .5rem;
+        font-size : 13px;
+    }
+
+    .first {
+        margin-bottom: 10px;
+    }
+    
+}

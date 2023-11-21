@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    box-sizing : border-box;
+    margin: 0px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    background-color : #33332D;
+    color :  #f8f9fa;
+}
+
+header {
+    display : flex;
+    justify-content: center;
+    width : 100%;
+    box-shadow: black 0px 0px 5px;
+}
+
+header .logo{
+    width : 5%;
+}
+
+header .logo img{
+    width : 100%;
+}
+
+.weeks {
+    width : 90%;
+    margin : auto;
+    display : flex;
+    justify-content: space-between;
+    padding-top : 30px;
+}
+
+.weeks div {
+    width : calc (100% / 2);
+}
+
+.line {
+    color : black;
+}
